@@ -1,0 +1,85 @@
+Dark mode
+
+•	what the code do ?
+Le code permet de modifier le background et la couleur du text sur <body> lorsqu’on coche la checkbox (passage d’un mode Light à un mode Dark)
+
+•	what is the purpose ?
+Modifier les propriétés du CSS selon qu’un évènement se déroule ou pas
+
+•	how does it work ?
+-	On définit dans le HTML l’élément déclencheur de l’évènement
+-	Au niveau du CSS, on créé un « avant » et un « après » avec des propriétés CSS différentes
+-	Au niveau du JS, on créé une fonction qui permet de piloter le CSS en fonction que l’évènement se produit ou pas. On créé également une variable qui détecte lorsque l’évènement a lieu, par défaut cette variable prend la valeur « false ».
+
+•	how to use it in a project ?
+-	Prendre le CSS + JS et adapter simplement la partie HTML (en ajoutant un id= « toggler» à un élément du body) afin de recréer le lien dans notre propre projet.
+
+Modal
+•	what the code do ?
+Le code affiche une modal après un clic sur un élément de la page.
+
+•	what is the purpose ?
+Faire apparaitre une fenêtre spécifique lorsqu’un évènement se produit.
+
+•	how does it work ?
+-	Au niveau HTML, on décompose le bloc en 3 parties (3 classes) : un bloc parent (la modal dans sa globalité), l’élement qui va déclencher l’évènement au clic (le trigger), le résultat de l’évenement (la modal avec écrit « something »
+-	Au niveau CSS, on définit de quelle manière s’affiche l’information avant d’activer le trigger et ensuite lorsqu’on l’active 
+
+•	how to use it in a project ?
+-	On utilise les mêmes classes que dans le snipet puis ensuite on injecte le CSS associé.
+
+
+
+Template
+
+•	what the code do ?
+Le code permet d’afficher du contenu (article) lorsqu’un évènement se produit (ici un clic sur le bouton « use it »)
+
+•	what is the purpose ?
+L’objectif est d’afficher du contenu uniquement si un évènement se produit
+
+•	how does it work ?
+o	Au niveau HTML, on créé une structure qui va accueillir le contenu à afficher au clic et on lui affecte un id
+o	Au niveau JS :
+	 on créé une première fonction qui va indiquer dans quelle partie du HTML le contenu doit s’injecter
+	on créé un objet qui contient différents attributs et leurs valeurs (dans cet exemple, les attributs sont des composantes d’un article (le titre <H1> et le texte qui compose l’article <p>)
+	on créé une boucle qui va permettre de balayer tous les attributs de l’objet et d’afficher leurs valeurs
+	on créé une variable « article » qui va contenir le contenu de chaque article
+	on injecte coup après coup, dans cette variable, le titre et le contenu.
+
+•	how to use it in a project ?
+o	On adapte éventuellement la structure HTML (template de l’élément) puis le code JS (en particulier l’objet « articlesData » qui dispose actuellement de 2 clés, nous pourrions avoir besoin de plus de clés dans certains projets. 
+
+
+
+Copy and paste
+
+•	what the code do ?
+Le code permet de faire un copier-coller de l’adresse email : wildo@mail.com
+
+•	what is the purpose ?
+Evite de faire un copier-coller manuel d’une adresse mail
+
+•	how does it work ?
+
+•	how to use it in a project ?
+
+
+Oninput
+
+
+•	what the code do ?
+Le code permet de définir un score après avoir répondu à un formulaire type QCM
+
+•	what is the purpose ?
+Donner une note suite aux réponses d’un user 
+
+•	how does it work ?
+Un formulaire HTML avec des inputs au format radio et une value = 0 ou = 1 en fonction que si on répond bien ou pas à la question (0 si on répond à côté, 1 si on répond juste).
+
+•	how to use it in a project ?
+Modifier la structure HTML du formulaire en intégrant ses propres questions ainsi que les réponses qui sont attendues. Il faudra aussi modifier le « Oninput » qui permet ensuite le calcul du score en fonction des critères qu’on lui a défini.
+
+
+
+
