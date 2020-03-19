@@ -1,0 +1,33 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --img-src : url(https://media.cdnandroid.com/5d/df/bd/cd/de/imagen-dark-mode-0thumb.jpg);
+
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+  }
+  
+  [data-theme="dark"] {
+    /* to read: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-* */
+    /* and https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+    --background-color: black;
+    --text-color: white;
+    --img-src: url(https://images.vexels.com/media/users/3/145138/isolated/preview/1de68bf333344dc5a6efca43807cfc6d-sun-small-line-beams-icon-by-vexels.png);
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .change_mode {
+    /* background-image : url (var(--img-src)); */
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: var(--img-src);
+    background-color: blue;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+  }
+
